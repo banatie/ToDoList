@@ -12,7 +12,7 @@ This is a simplest To-Do-List web application.
 __*30 Days*__
 Phases  | Tasks | Start Date | End Date | Time Consumed
 ------- |-------|------------|----------|--------------
-Phase1  | Plan for Development | NA | NA | NA
+Phase1  | Plan for Development | 10/30 | 10/30 | 2H
 Phase2  | Find Home, Signup, and Login Sample Pages | NA | NA | NA
 Phase3  | Create Wire Frame | NA | NA | NA
 Phase4  | HTML/CSS for User Pages | NA | NA | NA
