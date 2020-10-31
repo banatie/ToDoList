@@ -13,8 +13,8 @@ __*30 Days*__
 Phases  | Tasks | Start Date | End Date | Time Consumed
 ------- |-------|------------|----------|--------------
 Phase1  | Plan for Development | 10/30 | 10/30 | 2H
-Phase2  | Find Home, Signup, and Login Sample Pages | NA | NA | NA
-Phase3  | Create Wire Frame | NA | NA | NA
+Phase2  | Find Home, Signup, and Login Sample Pages | 10/30 | 10/30 | 15min
+Phase3  | Create Wire Frame | 10/30 | 10/30 | 30min
 Phase4  | HTML/CSS for User Pages | NA | NA | NA
 Phase5  | Django Tutorial | NA | NA | NA
 Phase6  | Add Sign Up Feature | NA | NA | NA
