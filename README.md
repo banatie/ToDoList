@@ -17,7 +17,7 @@ Phase2  | Find Home, Signup, and Login Sample Pages | 10/30 | 10/30 | 15min
 Phase3  | Create Wire Frame | 10/30 | 10/30 | 30min
 Phase4  | Bootstrap Tutorial | 10/30 | 10/30 | 30min
 Phase5  | HTML/CSS for User Pages | 10/30 | 10/30 | 30min
-Phase6  | Django Tutorial | NA | NA | NA
+Phase6  | Django Tutorial | 11/1 | 11/5 | 7H
 Phase7  | Add Sign Up Feature | NA | NA | NA
 Phase8  | Add Login In Feature | NA | NA | NA
 Phase9  | Arthitect DB | NA | NA | NA
