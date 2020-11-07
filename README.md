@@ -12,12 +12,12 @@ This is a simplest To-Do-List web application.
 __*30 Days*__
 Phases  | Tasks | Start Date | End Date | Time Consumed
 ------- |-------|------------|----------|--------------
-Phase1  | Plan for Development | 10/30 | 10/30 | 2H
+Phase1  | Plan for Development | 10/30 | 10/30 | 2h
 Phase2  | Find Home, Signup, and Login Sample Pages | 10/30 | 10/30 | 15min
 Phase3  | Create Wire Frame | 10/30 | 10/30 | 30min
 Phase4  | Bootstrap Tutorial | 10/30 | 10/30 | 30min
 Phase5  | HTML/CSS for User Pages | 10/30 | 10/30 | 30min
-Phase6  | Django Tutorial | 11/1 | 11/5 | 7H
+Phase6  | Django Tutorial | 11/1 | 11/5 | 7h
 Phase7  | Add Sign Up Feature | 11/7 | 11/7 | 30min
 Phase8  | Add Login In Feature | 11/7 | 11/7 | 30min
 Phase9  | Arthitect DB | NA | NA | NA
