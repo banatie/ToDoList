@@ -34,30 +34,36 @@
     <link href="{% static 'todolist/styles/index.css' %}"  rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="{% url 'todolist:index' %}">Banatie</a>
-      <a class="nform-inline my-2 my-lg-0 text-right" href="{% url 'todolist:signup' %}">Sign Up</a>
-    </nav>
 
-<main role="main">
-
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron long_jumbotron row">
-    <div class="col-md-6">
-      <h1 class="display-4">Keep Your List</h1>
-      <h3>Banatie is the simplest To-Do-List you have ever seen.</h3>
+{% if user.is_authenticated %}
+  <nav class="navbar navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="{% url 'todolist:index' %}">Banatie</a>
+  </nav>
+  <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
+{% else %}
+  <nav class="navbar navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="{% url 'todolist:index' %}">Banatie</a>
+    <a class="nform-inline my-2 my-lg-0 text-right" href="{% url 'todolist:signup' %}">Sign Up</a>
+  </nav>
+  <main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron long_jumbotron row">
+      <div class="col-md-6">
+        <h1 class="display-4">Keep Your List</h1>
+        <h3>Banatie is the simplest To-Do-List you have ever seen.</h3>
+      </div>
+      <div class="col-md-6 text-center">
+          <form class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+      </div>
     </div>
-    <div class="col-md-6 text-center">
-        <form class="form-signin">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    </form>
-    </div>
-  </div>
 
-</main>
+  </main>
+{% endif %}
 </html>
