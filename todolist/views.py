@@ -7,4 +7,5 @@ def index(request):
     return render(request, 'todolist/index.html', context)
     
 def signup(request):
-    return HttpResponse('signup!!!')
+    context = {}
+    return render(request, 'todolist/signup.html', context)
