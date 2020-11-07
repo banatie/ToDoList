@@ -34,6 +34,10 @@
     <link href="{% static 'todolist/styles/signup.css' %}" rel="stylesheet">
   </head>
   <body class="text-center">
+    <nav class="navbar navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="{% url 'todolist:index' %}">Banatie</a>
+      <a class="nform-inline my-2 my-lg-0 text-right" href="{% url 'todolist:signup' %}">Sign Up</a>
+    </nav>
     <form class="form-signin">
   <h1 class="h3 mb-3 font-weight-normal">Create your account</h1>
   <label for="inputEmail" class="sr-only">Email address</label>

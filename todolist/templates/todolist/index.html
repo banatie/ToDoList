@@ -34,9 +34,10 @@
     <link href="{% static 'todolist/styles/index.css' %}"  rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="index.html">Banatie</a>
-</nav>
+    <nav class="navbar navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="{% url 'todolist:index' %}">Banatie</a>
+      <a class="nform-inline my-2 my-lg-0 text-right" href="{% url 'todolist:signup' %}">Sign Up</a>
+    </nav>
 
 <main role="main">
 
@@ -59,6 +60,4 @@
   </div>
 
 </main>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </html>
