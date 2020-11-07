@@ -18,10 +18,10 @@ Phase3  | Create Wire Frame | 10/30 | 10/30 | 30min
 Phase4  | Bootstrap Tutorial | 10/30 | 10/30 | 30min
 Phase5  | HTML/CSS for User Pages | 10/30 | 10/30 | 30min
 Phase6  | Django Tutorial | 11/1 | 11/5 | 7H
-Phase7  | Add Sign Up Feature | NA | NA | NA
-Phase8  | Add Login In Feature | NA | NA | NA
+Phase7  | Add Sign Up Feature | 11/7 | 11/7 | 30min
+Phase8  | Add Login In Feature | 11/7 | 11/7 | 30min
 Phase9  | Arthitect DB | NA | NA | NA
-Phase10  | Connect to the DB | NA | NA | NA
+Phase10 | Connect to the DB | NA | NA | NA
 Phase11 | Add Validation Feature | NA | NA | NA
 Phase12 | Add Error Message | NA | NA | NA
 Phase13 | Add [Add ToDo] Feature | NA | NA | NA
