@@ -24,8 +24,8 @@ def signup(request):
         except KeyError:
             context = {'error_message' : 'Email or Password is not Found'}
             return render(request, 'todolist/signup.html', context)
-        user = User.objects.create_user(username=email, password=password)
-        auth_login(request, user)
+        user = User.objects.create_user(username=email, email=email, password=password)
+        login(request, user)
         context = {}
         return render(request, 'todolist/index.html', context)
         """
