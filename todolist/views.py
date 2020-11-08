@@ -45,8 +45,12 @@ def user_login(request):
         render(request, 'todolist/index.html', context)
 
     # Get email, password
-    email = request.POST.get('email')
-    password = request.POST.get('password')
+    try:
+        email = request.POST['email']
+        password = request.POST['password']
+    except KeyError:
+        context = {'error_message' : 'Email or Password is not Found'}
+        return render(request, 'todolist/index.html', context)
     user = authenticate(request, username=email, password=password)
     if user is not None:
         login(request, user)
