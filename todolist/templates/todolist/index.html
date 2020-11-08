@@ -34,7 +34,7 @@
     <link href="{% static 'todolist/styles/index.css' %}"  rel="stylesheet">
   </head>
   <body>
-
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 {% if user.is_authenticated %}
   <nav class="navbar navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="{% url 'todolist:index' %}">Banatie</a>
@@ -52,13 +52,15 @@
         <h1 class="display-4">Keep Your List</h1>
         <h3>Banatie is the simplest To-Do-List you have ever seen.</h3>
       </div>
+
       <div class="col-md-6 text-center">
-          <form class="form-signin">
+      <form class="form-signin" action="{% url 'todolist:login' %}" method="post">
+        {% csrf_token %}
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" id="password" class="form-control" placeholder="Password" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
       </div>
