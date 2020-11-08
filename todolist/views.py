@@ -24,20 +24,16 @@ def signup(request):
         except KeyError:
             context = {'error_message' : 'Email or Password is not Found'}
             return render(request, 'todolist/signup.html', context)
-        user = User.objects.create_user(username=email, email=email, password=password)
+        try:
+            user = User.objects.get(username=email)
+            context = {'error_message' : 'The Email is already taken'}
+            return render(request, 'todolist/signup.html', context)
+        except User.DoesNotExist:
+            user = User.objects.create_user(username=email, email=email, password=password)
         login(request, user)
         context = {}
         return render(request, 'todolist/index.html', context)
-        """
-        if user is not None:
-            login(request, user)
-            context = {}
-            return render(request, 'todolist/index.html', context)
-        else:
-            context = {'error_message' : 'Authentication Failed'}
-            return render(request, 'todolist/signup.html', context)
-        """
-
+ 
 def user_login(request):
     # Only Accept Post Request
     if request.method != 'POST':
@@ -51,6 +47,7 @@ def user_login(request):
     except KeyError:
         context = {'error_message' : 'Email or Password is not Found'}
         return render(request, 'todolist/index.html', context)
+
     user = authenticate(request, username=email, password=password)
     if user is not None:
         login(request, user)
