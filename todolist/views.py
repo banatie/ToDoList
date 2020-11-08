@@ -1,7 +1,7 @@
 from django.shortcuts import render
 #from django.http import HttpResponse
 #from django.contrib.auth.decorators import login_required
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 
 # Create your views here.
@@ -55,3 +55,8 @@ def login(request):
     else:
         context = {'error_message' : 'Account not Found.'}
         return render(request, 'todolist/index.html', context)
+
+def user_logout(request):
+    logout(request)
+    context = {}
+    return render(request, 'todolist/index.html', context)
