@@ -38,7 +38,7 @@ def signup(request):
             return render(request, 'todolist/signup.html', context)
         """
 
-def login(request):
+def user_login(request):
     # Only Accept Post Request
     if request.method != 'POST':
         context = {'error_message' : 'Invalid HTTP request'}
