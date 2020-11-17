@@ -41,6 +41,11 @@
     <a class="nform-inline my-2 my-lg-0 text-right" href="{% url 'todolist:logout' %}">Logout</a>
   </nav>
   <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
+  {% if entries %}
+    {% for entry in entries %}
+     <label>{{ entry.text }}</label>
+    {% endfor %}
+  {% endif %}
 {% else %}
   <nav class="navbar navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="{% url 'todolist:index' %}">Banatie</a>

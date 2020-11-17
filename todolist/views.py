@@ -3,10 +3,16 @@ from django.shortcuts import render
 #from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
+from todolist.models import Entry
 
 # Create your views here.
 def index(request):
     context = {}
+    if request.user.is_authenticated:
+        # Give the list todo entries
+        entries = Entry.objects.filter(user=request.user.id)
+        context['entries'] = entries
+
     return render(request, 'todolist/index.html', context)
 
 def signup(request):
