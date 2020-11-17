@@ -36,6 +36,7 @@ Phase21 | Create RESTful API | NA | NA | NA
 Phase22 | Plan for Deployment | NA | NA | NA
 Phase23 | Adjust for Deployment | NA | NA | NA
 Phase24 | Deploy for Free for a week | NA | NA | NA
+Phase25 | Create Customized User | NA | NA | NA
 
 ## Wire Frame
 index.html <-> signup.html <br>
