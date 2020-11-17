@@ -23,11 +23,11 @@ Phase8  | Add Login In Page using Django | 11/7 | 11/7 | 30min
 Phase9  | Add Sign Up Feature | 11/8 | 11/8 | 1h
 Phase10 | Add Login In Feature | 11/8 | 11/8 | 1h
 Phase11 | Arthitect DB | NA | NA | NA
-Phase12 | Connect to the DB | NA | NA | NA
+Phase12 | Connect to the DB | 11/8 | 11/8 | 0min
 Phase13 | Add Validation Feature | NA | NA | NA
 Phase14 | Add Error Message | 11/8 | 11/8 | 15min
 Phase15 | Add [Add ToDo] Feature | NA | NA | NA
-Phase16 | Add User Dashboard | NA | NA | NA
+Phase16 | Add User Dashboard | 11/17 | 11/17 | 45min
 Phase17 | Add Admin Page | 11/7 | 11/7 | 0min
 Phase18 | Add Admin Dashboard | 11/7 | 11/7 | 0min
 Phase19 | Use PostgreSQL | NA | NA | NA
