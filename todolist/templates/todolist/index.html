@@ -59,6 +59,18 @@
       </table>
     </div>
   {% endif %}
+    <form action="{% url 'todolist:add_todo' %}" method="post">
+     {% csrf_token %}
+     <div class="form-row">
+      <div class="col">
+        <label for="inputTodo" class="sr-only">ToDo</label>
+        <input name="todo" type="text" id="inputTodo" class="form-control" placeholder="Todo...">
+      </div>
+      <div class="col">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Add</button>
+      </div>
+     </div>
+    </form>
 {% else %}
   <nav class="navbar navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="{% url 'todolist:index' %}">Banatie</a>

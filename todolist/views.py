@@ -47,8 +47,8 @@ def user_login(request):
         context = {'error_message' : 'Invalid HTTP request'}
         render(request, 'todolist/index.html', context)
 
-    # Get email, password
     try:
+        # Get email and password
         email = request.POST['email']
         password = request.POST['password']
     except KeyError:
@@ -67,3 +67,20 @@ def user_logout(request):
     logout(request)
     context = {}
     return render(request, 'todolist/index.html', context)
+
+def add_todo(request):
+    if request.method != 'POST':
+        context = {'error_message' : 'Invalid HTTP request'}
+        render(request, 'todolist/index.html', context)
+
+    try:
+        todo = request.POST['todo']
+    except KeyError:
+        context = {'error_message' : 'Todo entry is not Found'}
+        return render(request, 'todolist/index.html', context)
+
+    # Add todo entry
+    entry = Entry(user=request.user, text=todo)
+    entry.save()
+
+    return HttpResponseRedirect(reverse('todolist:index'))
