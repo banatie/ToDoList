@@ -20,16 +20,16 @@ Phase5  | HTML/CSS for User Pages | 10/30 | 10/30 | 30min
 Phase6  | Django Tutorial | 11/1 | 11/5 | 7h
 Phase7  | Add Sign Up Page using Django | 11/7 | 11/7 | 30min
 Phase8  | Add Login In Page using Django | 11/7 | 11/7 | 30min
-Phase9  | Add Sign Up Feature | 11/8 | 11/8 | 1h
-Phase10 | Add Login In Feature | 11/8 | 11/8 | 1h
-Phase11 | Arthitect DB | NA | NA | NA
-Phase12 | Connect to the DB | 11/8 | 11/8 | 0min
-Phase13 | Add Validation Feature | NA | NA | NA
+Phase9 | Add Admin Dashboard | 11/7 | 11/7 | 0min
+Phase10 | Add Admin Page | 11/7 | 11/7 | 0min
+Phase11 | Add Sign Up Feature | 11/8 | 11/8 | 1h
+Phase12 | Add Login In Feature | 11/8 | 11/8 | 1h
+Phase13 | Connect to the DB | 11/8 | 11/8 | 0min
 Phase14 | Add Error Message | 11/8 | 11/8 | 15min
-Phase15 | Add [Add ToDo] Feature | NA | NA | NA
-Phase16 | Add User Dashboard | 11/17 | 11/17 | 45min
-Phase17 | Add Admin Page | 11/7 | 11/7 | 0min
-Phase18 | Add Admin Dashboard | 11/7 | 11/7 | 0min
+Phase15 | Add User Dashboard | 11/17 | 11/17 | 45min
+Phase16 | Add [Add ToDo] Feature | 11/19 | 11/19 | 1h
+Phase17 | Add [Delete ToDo] Feature | NA | NA | NA
+Phase18 | Arthitect DB | NA | NA | NA
 Phase19 | Use PostgreSQL | NA | NA | NA
 Phase20 | Create Customized Sign Up Page | NA | NA | NA
 Phase21 | Create RESTful API | NA | NA | NA
