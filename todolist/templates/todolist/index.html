@@ -53,6 +53,11 @@
           {% for entry in entries %}
             <tr>
               <td>{{ entry.text }}</td>
+              <td>
+                <form action="{% url 'todolist:delete_todo' entry.id %}" action="post">
+                  <button class="btn btn-lg btn-primary btn-block" type="submit">Remove</button>
+                </form>
+              </td>
             </tr>
           {% endfor %}
         </tbody>

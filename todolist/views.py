@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from django.http import HttpResponseRedirect
 #from django.contrib.auth.decorators import login_required
@@ -83,4 +83,18 @@ def add_todo(request):
     entry = Entry(user=request.user, text=todo)
     entry.save()
 
+    return HttpResponseRedirect(reverse('todolist:index'))
+
+def delete_todo(request, entry_id):
+    if request.method != 'POST':
+        context = {'error_message' : 'Invalid HTTP request'}
+        render(request, 'todolist/index.html', context)
+
+    # Find the entry from DB
+    entry = get_object_or_404(Entry, pk=entry_id)
+
+    # Delete from DB
+    entry.delete()
+
+    # Redirect to index
     return HttpResponseRedirect(reverse('todolist:index'))
