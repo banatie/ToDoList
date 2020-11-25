@@ -28,7 +28,7 @@ Phase13 | Connect to the DB | 11/8 | 11/8 | 0min
 Phase14 | Add Error Message | 11/8 | 11/8 | 15min
 Phase15 | Add User Dashboard | 11/17 | 11/17 | 45min
 Phase16 | Add [Add ToDo] Feature | 11/19 | 11/19 | 1h
-Phase17 | Add [Delete ToDo] Feature | NA | NA | NA
+Phase17 | Add [Delete ToDo] Feature | 11/25 | 11/25 | 30min
 Phase18 | Arthitect DB | NA | NA | NA
 Phase19 | Use PostgreSQL | NA | NA | NA
 Phase20 | Create Customized Sign Up Page | NA | NA | NA
