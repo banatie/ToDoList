@@ -31,7 +31,7 @@ Phase16 | Add [Add ToDo] Feature | 11/19 | 11/19 | 1h
 Phase17 | Add [Delete ToDo] Feature | 11/25 | 11/25 | 30min
 Phase18 | Arthitect DB | NA | NA | NA
 Phase19 | Use PostgreSQL | NA | NA | NA
-Phase20 | Create Customized Sign Up Page | NA | NA | NA
+Phase20 | Verify Add not empty | NA | NA | NA
 Phase21 | Create RESTful API | NA | NA | NA
 Phase22 | Plan for Deployment | NA | NA | NA
 Phase23 | Adjust for Deployment | NA | NA | NA
