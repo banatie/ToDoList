@@ -7,15 +7,6 @@ from django.contrib.auth.models import User
 from todolist.models import Todo
 
 
-def index(request):
-    context = {}
-    if request.user.is_authenticated:
-        # Give the list todo todos
-        todos = Todo.objects.filter(user=request.user.id)
-        context['todos'] = todos
-
-    return render(request, 'todolist/index.html', context)
-
 def signup(request):
     if request.user.is_authenticated:
         context = {}

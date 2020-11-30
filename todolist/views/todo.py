@@ -5,6 +5,15 @@ from django.http import HttpResponseRedirect
 from todolist.models import Todo
 
 
+def index(request):
+    context = {}
+    if request.user.is_authenticated:
+        # Give the list todo todos
+        todos = Todo.objects.filter(user=request.user.id)
+        context['todos'] = todos
+
+    return render(request, 'todolist/index.html', context)
+
 def add_todo(request):
     if request.method != 'POST':
         context = {'error_message' : 'Invalid HTTP request'}
