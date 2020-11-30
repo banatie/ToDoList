@@ -15,6 +15,9 @@ def add_todo(request):
     except KeyError:
         context = {'error_message' : 'Todo is not Found'}
         return render(request, 'todolist/index.html', context)
+    
+    if todo == '':
+        return HttpResponseRedirect(reverse('todolist:index'))
 
     # Add todo
     todo = Todo(user=request.user, text=todo)
