@@ -32,11 +32,8 @@ Phase17 | Add [Delete ToDo] Feature | 11/25 | 11/25 | 30min
 Phase18 | Arthitect DB | 11/28 | 11/28 | 15min
 Phase19 | Use PostgreSQL | 11/29 | 11/29 | 1h
 Phase20 | Verify Add not empty | 11/30 | 11/30 | 15min
-Phase21 | Create RESTful API | NA | NA | NA
-Phase22 | Plan for Deployment | NA | NA | NA
-Phase23 | Adjust for Deployment | NA | NA | NA
-Phase24 | Deploy for Free for a week | NA | NA | NA
-Phase25 | Create Customized User | NA | NA | NA
+Phase21 | Plan for Deployment | 12/4 | 12/7 | 4h
+Phase22 | Deploy on heroku | 12/7 | 12/9 | 4h
 
 ## Wire Frame
 index.html <-> signup.html <br>
